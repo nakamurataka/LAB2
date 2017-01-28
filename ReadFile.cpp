@@ -40,5 +40,6 @@ String* ReadFile::readLine()
    
    _eof = !(getline(this->input_file, text));
 
-   return str = new String((const char*) text.c_str());
+   String* str = new String((const char*) text.c_str());
+   return str;
 }
