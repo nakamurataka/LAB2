@@ -10,6 +10,8 @@ WriteFile::WriteFile(const char* file_name)
 WriteFile::~WriteFile()
 {
    close();
+
+   delete this;
 }
 
 void WriteFile::close()
