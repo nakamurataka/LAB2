@@ -40,6 +40,11 @@ String* ReadFile::readLine()
    
    _eof = !(getline(this->input_file, text));
 
+<<<<<<< HEAD
    String* str = new String((const char*) text.c_str());	//good job here
+=======
+   //Here is I modified.
+   String* str = new String((const char*) text.c_str());
+>>>>>>> 715fcbb51aa8d62b18e6fc74de0f791ff1aefdd6
    return str;
 }
